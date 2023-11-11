@@ -1,5 +1,194 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  display: grid;
+  gap: 40px;
+  background-color: var(--background-color-dark);
+  background-position: center;
+  background-attachment: fixed;
+  font-family: var(--font-family);
+}
+
+.header {
+  position: relative;
+  display: grid;
+  background-image: url(../images/cover-image-dark.png);
+}
+
+.decorated-zone {
+  padding: 10px;
+  height: 100vh;
+}
+
+.rectangle_up {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-top: 1px solid #FF0070;
+  border-right: 1px solid #FF0070;
+  text-transform: uppercase;
+  right: 10px;
+  top: 10px;
+}
+
+.rectangle_down {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-bottom: 1px solid #FF0070;
+  border-left: 1px solid #FF0070;
+  text-transform: uppercase;
+  left: 10px;
+  bottom: 10px;
+}
+
+.rec_text {
+  position: absolute;
+  right: 26px;
+  color: #FF0070;
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+
+.header__theme-menu {
+  display: grid;
+  justify-content: end;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 13px;
+  color: #FF0070;
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 100% */  
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+}
+
+.header__title {
+  display: grid;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-header_footer_text);
+  text-shadow: var(--text-shadow-dark);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  font-family: inherit;
+}
+
+.header__text {
+  color: var(--color-headline_text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  background-color: var(--background-text-color-dark);
+  font-family: var(--font-family);
+  margin-top: 52px;
+  margin-bottom: 50px;
+  align-self: start;
+}
+
+.main {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  gap: 50px;
+
+}
+
+.main__title {
+  color: var(--color-title_text);
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.paragraph__title {
+  color: var(--color-headline_text);
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  background-color: var( --background-text-color-dark);
+  }
+
+.light_text {
+  font-weight: 400;
+}
+
+.paragraph__text {
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+  padding-top: 10px;
+}
+
+.paragraph__question {
+  color: var(--color-headline_text);
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  background-color: var( --background-text-color-dark);
+}
+
+.section_gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery_items {
+  display: grid;
+  gap: 10px;
+}
+
+.images {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_text {
+  color: var(--color-header_footer_text);
+  text-shadow: 2px 2px 0px #FF0070;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  font-family: inherit;
 }
