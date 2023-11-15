@@ -80,7 +80,7 @@
   justify-content: end;
   padding-top: 65px;
   padding-bottom: 65px;
-  padding-right: 5px;
+ padding-right: 5px;
 }
 
 .header__theme-menu-list {
@@ -284,7 +284,7 @@
 .footer_text {
   color: var(--color-header_footer_text);
   text-shadow: 2px 2px 0 var(--text-shadow-dark);
-  font-size: 116px;
+ font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
