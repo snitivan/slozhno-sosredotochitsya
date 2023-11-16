@@ -11,6 +11,8 @@
   --text-shadow-dark: 4px 4px 0 #ff0070;
   --font-family: "IBM Plex Mono";
   --background-text-color-dark: #ff0070;
+  --button-text_color: #ff0070;
+  --button_hover-color: rgba(255, 0, 112, 0.40);
   --background-color-dark: #000028; 
   --background-image: url(../images/cover-image-dark.png);
 }

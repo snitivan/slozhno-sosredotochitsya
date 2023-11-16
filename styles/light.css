@@ -17,6 +17,8 @@
   --font-family: "IBM Plex Mono";
   --background-text-color-dark: #FF8DCB;;
   --background-color-dark: #FFF; 
+  --button-text_color: #353430;
+  --button_hover-color: rgba(50, 49, 45, 0.40);
   --background-image: url(../images/cover-image-light.png);
   --z-index: -1;
 }
@@ -31,7 +33,9 @@
         --color-text: #353430;
         --text-shadow-dark: 4px 4px 0 #FF8DCB;;
         --font-family: "IBM Plex Mono";
-        --background-text-color-dark: #FF8DCB;;
+        --background-text-color-dark: #FF8DCB;
+        --button-text_color: #353430;
+        --button_hover-color: rgba(50, 49, 45, 0.40);
         --background-color-dark: #FFF; 
         --background-image: url(../images/cover-image-light.png);
     }
