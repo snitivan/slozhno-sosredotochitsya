@@ -103,12 +103,12 @@
 }
 
 .header__theme-menu-button:active {
-  outline: 1px solid var(--background-text-color-dark);
+  outline: 1px solid var(--button-border-color);
   outline-offset: 4px;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.40);
+  outline: 1px solid var(--button_hover-color);
   outline-offset: 4px;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--background-text-color-dark);
+  outline: 1px solid var(--button-border-color);
   outline-offset: 4px;
   pointer-events: none;
 }
@@ -193,22 +193,12 @@
   line-height: 23.4px; /* 130% */
 }
 
-.first_section {
-  display: grid;
-  gap: 20px;
-}
-
-.second_section {
+.section {
   display: grid;
   gap: 20px;
 }
 
 .paragraph__items-second_section {
-  display: grid;
-  gap: 20px;
-}
-
-.third_section {
   display: grid;
   gap: 20px;
 }
@@ -469,10 +459,6 @@
     bottom: 20px;
   }
 
-  .title {
-    font-size: 157px;
-  }
-
   .header__theme-menu {
     display: grid;
     justify-content: center;
@@ -598,13 +584,5 @@
   .image-street {
     grid-row: 3/4;
     grid-column: 2/4;
-  }
-
-  .footer_text {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-  
-  .decorated-zone-footer {
-    padding: 20px;
   }
 }
